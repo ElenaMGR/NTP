@@ -26,13 +26,13 @@ public class ListadoTestP2 {
     */
    @BeforeClass
    public static void inicializacion() {
-      System.out.println("Metodo inicializacion conjunto pruebas");
+      /*System.out.println("Metodo inicializacion conjunto pruebas");
       // Se genera el listado de empleados
       try {
          listado = new ListadoEmpleados("./data/datos.txt");
       } catch (IOException e) {
          System.out.println("Error en lectura de archivo de datos");
-      }
+      }*/
 
       // Se reparan los problemas y se pasan los datos al datos miembro
       // listado
