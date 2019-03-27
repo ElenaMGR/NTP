@@ -61,6 +61,25 @@ public class Empleado {
         ruta = Ruta.NORUTA;
     }
 
+    /**
+     * Constructor a partir de linea de datos
+     * @param linea
+     * @return
+     */
+    public Empleado(String linea) {
+        // Se define el patron para las comas que hacen de separadores
+        Pattern pattern = Pattern.compile(",");
+
+        // Se procesa la linea
+        List<String> infos = pattern.splitAsStream(linea).collect(Collectors.toList());
+
+        // Se asignan valores de datos miembro
+        dni=infos.get(0);
+        nombre=infos.get(1);
+        apellidos=infos.get(2);
+        correo=infos.get(3);
+    }
+
    /**
     * Asigna el dni
     * @param dni

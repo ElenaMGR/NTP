@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c2fe7d3b-f1a8-4ff1-a434-707a38cef67b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ListadoTestP1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListadoTestP1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListadoTestP2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListadoTestP2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listado/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listado/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/listado/ListadoEmpleados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/listado/ListadoEmpleados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../pruebaScala/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../pruebaScala/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/listado/Empleado.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="240">
+              <caret line="146" column="28" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -31,10 +32,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ListadoTestP1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+            <state relative-caret-position="225">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1229#1230#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,10 +46,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/listado/ListadoEmpleados.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="255">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1353#1354#0" expanded="true" />
+                <element signature="e#1374#1375#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,9 +102,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/listado/ListadoEmpleados.java" />
         <option value="$PROJECT_DIR$/src/ListadoTestP2.java" />
+        <option value="$PROJECT_DIR$/src/listado/Empleado.java" />
         <option value="$PROJECT_DIR$/src/ListadoTestP1.java" />
+        <option value="$PROJECT_DIR$/src/listado/ListadoEmpleados.java" />
       </list>
     </option>
   </component>
@@ -115,6 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,7 +150,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -153,7 +159,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551950650447" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553681957293" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -174,6 +180,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="ListadoTestP1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Practica1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ListadoTestP1" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ListadoTestP1" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -187,25 +209,54 @@
       <workItem from="1551948229627" duration="533000" />
       <workItem from="1551948900935" duration="1835000" />
       <workItem from="1552548965641" duration="1135000" />
+      <workItem from="1553676121951" duration="5797000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ListadoTestP1 - 2019.03.27 at 10h 03m 22s.xml">
+      <configuration name="ListadoTestP1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListadoTestP1 - 2019.03.27 at 10h 26m 32s.xml">
+      <configuration name="ListadoTestP1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListadoTestP1 - 2019.03.27 at 10h 35m 09s.xml">
+      <configuration name="ListadoTestP1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListadoTestP1 - 2019.03.27 at 10h 39m 21s.xml">
+      <configuration name="ListadoTestP1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListadoTestP1 - 2019.03.27 at 11h 00m 47s.xml">
+      <configuration name="ListadoTestP1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListadoTestP1 - 2019.03.27 at 11h 02m 22s.xml">
+      <configuration name="ListadoTestP1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListadoTestP1 - 2019.03.27 at 11h 10m 25s.xml">
+      <configuration name="ListadoTestP1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ListadoTestP1 - 2019.03.27 at 11h 10m 43s.xml">
+      <configuration name="ListadoTestP1" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3503000" />
+    <option name="totallyTimeSpent" value="9300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="25" width="1313" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2573007" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26124704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -230,10 +281,10 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/listado/Empleado.java">
+    <entry file="file://$PROJECT_DIR$/src/ListadoTestP2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -254,20 +305,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ListadoTestP2.java">
+    <entry file="file://$PROJECT_DIR$/src/ListadoTestP1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        <state relative-caret-position="225">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ListadoTestP1.java">
+    <entry file="file://$PROJECT_DIR$/src/listado/Empleado.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        <state relative-caret-position="240">
+          <caret line="146" column="28" selection-start-line="146" selection-start-column="18" selection-end-line="146" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -276,10 +329,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/listado/ListadoEmpleados.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+        <state relative-caret-position="255">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1374#1375#0" expanded="true" />
           </folding>
         </state>
       </provider>

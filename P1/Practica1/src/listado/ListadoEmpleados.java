@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -42,5 +44,41 @@ public class ListadoEmpleados {
             System.out.println("Error reading file: "+nombreArchivo);
             System.exit(0);
         }
+    }
+
+    /**
+     * Método que devuelve el número de empleados
+     */
+    public int obtenerNumeroEmpleadosArchivo(){
+        return numeroEmpleados;
+    }
+
+    public boolean hayDnisRepetidosArchivo(){
+        AtomicBoolean repetidos = new AtomicBoolean(false);
+        //Agrupamiento de los empleados por dni
+        Map<String, List<Empleado>> agrupadosDni =
+                empleados.stream().collect(Collectors.groupingBy(Empleado::obtenerDni));
+
+        /*TreeMap<String, Long> contadores =
+                empleados.stream().collect(Collectors.groupingBy(
+                        Empleado::obtenerDni, TreeMap::new, Collectors.counting()));
+
+        contadores.forEach((dni,cont)->{
+            if (cont > 1)
+                System.out.println(dni + " : " + cont);
+        });*/
+
+
+
+        agrupadosDni.forEach(
+                (dni, asignados)->{
+                    if (asignados.size() > 1) {
+                        //System.out.println(dni + " : " + asignados.size());
+                        repetidos.set(true);
+                    }
+                }
+        );
+
+        return repetidos.get();
     }
 }

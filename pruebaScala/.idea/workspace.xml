@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c221b14-0de1-4a0f-988a-a396feabb5fd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P1/Practica1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P1/Practica1/src/ListadoTestP1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/src/ListadoTestP1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P1/Practica1/src/listado/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/src/listado/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P1/Practica1/src/listado/ListadoEmpleados.java" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/src/listado/ListadoEmpleados.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,10 +88,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="53" />
-    <option name="y" value="25" />
-    <option name="width" value="657" />
-    <option name="height" value="743" />
+    <option name="x" value="63" />
+    <option name="y" value="47" />
+    <option name="width" value="1293" />
+    <option name="height" value="701" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -135,6 +138,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553077342611" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../P1/Practica1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -240,15 +244,25 @@
       <workItem from="1552550982541" duration="4673000" />
       <workItem from="1553070852895" duration="6554000" />
       <workItem from="1553089950305" duration="1655000" />
-      <workItem from="1553675503636" duration="463000" />
+      <workItem from="1553675503636" duration="1206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13345000" />
+    <option name="totallyTimeSpent" value="14088000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="25" width="1313" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18863457" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
