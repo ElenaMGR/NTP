@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c221b14-0de1-4a0f-988a-a396feabb5fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/ConceptosBasicos.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/cadenas.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/expresionesSentencias.sc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/tipos.sc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P1/Practica1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P1/Practica1/out/production/Practica1/ListadoTestP1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/out/production/Practica1/ListadoTestP1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P1/Practica1/out/production/Practica1/listado/ListadoEmpleados.class" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/out/production/Practica1/listado/ListadoEmpleados.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P1/Practica1/src/ListadoTestP1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/src/ListadoTestP1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P1/Practica1/src/listado/ListadoEmpleados.java" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/src/listado/ListadoEmpleados.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8c221b14-0de1-4a0f-988a-a396feabb5fd" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -87,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/expresionesSentencias.sc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+            <state relative-caret-position="593">
+              <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -183,7 +172,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553765313351" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553765317682" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../P1/Practica1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -291,12 +280,12 @@
       <workItem from="1553070852895" duration="6554000" />
       <workItem from="1553089950305" duration="1655000" />
       <workItem from="1553675503636" duration="1206000" />
-      <workItem from="1553758462564" duration="6490000" />
+      <workItem from="1553758462564" duration="6621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20578000" />
+    <option name="totallyTimeSpent" value="20709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -434,8 +423,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/expresionesSentencias.sc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+        <state relative-caret-position="593">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
         </state>
       </provider>
     </entry>
