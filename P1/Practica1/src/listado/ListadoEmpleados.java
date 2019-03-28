@@ -5,7 +5,9 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -53,22 +55,15 @@ public class ListadoEmpleados {
         return numeroEmpleados;
     }
 
+
+    /**
+     * Método que devuelve true si hay dnis repetidos
+     */
     public boolean hayDnisRepetidosArchivo(){
         AtomicBoolean repetidos = new AtomicBoolean(false);
         //Agrupamiento de los empleados por dni
         Map<String, List<Empleado>> agrupadosDni =
                 empleados.stream().collect(Collectors.groupingBy(Empleado::obtenerDni));
-
-        /*TreeMap<String, Long> contadores =
-                empleados.stream().collect(Collectors.groupingBy(
-                        Empleado::obtenerDni, TreeMap::new, Collectors.counting()));
-
-        contadores.forEach((dni,cont)->{
-            if (cont > 1)
-                System.out.println(dni + " : " + cont);
-        });*/
-
-
 
         agrupadosDni.forEach(
                 (dni, asignados)->{
@@ -80,5 +75,26 @@ public class ListadoEmpleados {
         );
 
         return repetidos.get();
+    }
+
+    /**
+     * Método que devuelve el número de empleados con dnis repetidos
+     */
+    public int contarEmpleadosDnisRepetidos(){
+        AtomicInteger num = new AtomicInteger();
+        //Agrupamiento de los empleados por dni contando los empleados con dni repetidos
+        TreeMap<String, Long> contadores =
+                empleados.stream().collect(Collectors.groupingBy(
+                        Empleado::obtenerDni, TreeMap::new, Collectors.counting()));
+
+        contadores.forEach((dni,cont)->{
+            if (cont > 1) {
+                //System.out.println(dni + " : " + cont);
+                num.addAndGet(cont.intValue());
+                //System.out.println(num);
+            }
+        });
+
+        return num.get();
     }
 }

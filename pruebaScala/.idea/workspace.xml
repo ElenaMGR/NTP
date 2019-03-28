@@ -2,10 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c221b14-0de1-4a0f-988a-a396feabb5fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/ConceptosBasicos.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/cadenas.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/expresionesSentencias.sc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/tipos.sc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../P1/Practica1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P1/Practica1/out/production/Practica1/ListadoTestP1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/out/production/Practica1/ListadoTestP1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../P1/Practica1/out/production/Practica1/listado/ListadoEmpleados.class" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/out/production/Practica1/listado/ListadoEmpleados.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../P1/Practica1/src/ListadoTestP1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/src/ListadoTestP1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../P1/Practica1/src/listado/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/src/listado/Empleado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../P1/Practica1/src/listado/ListadoEmpleados.java" beforeDir="false" afterPath="$PROJECT_DIR$/../P1/Practica1/src/listado/ListadoEmpleados.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,11 +57,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/ProcesamientoLineas.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
+            <state relative-caret-position="401">
               <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/ConceptosBasicos.sc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="474">
+              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/tipos.sc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="473">
+              <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/expresionesSentencias.sc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/scala/cadenas.sc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -84,6 +126,10 @@
         <option value="$PROJECT_DIR$/src/main/scala/Mapas.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/EstiloFuncional.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/ProcesamientoLineas.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/ConceptosBasicos.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/cadenas.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/tipos.sc" />
+        <option value="$PROJECT_DIR$/src/main/scala/expresionesSentencias.sc" />
       </list>
     </option>
   </component>
@@ -101,6 +147,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,14 +178,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553077342611" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553765313351" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../P1/Practica1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -245,11 +291,12 @@
       <workItem from="1553070852895" duration="6554000" />
       <workItem from="1553089950305" duration="1655000" />
       <workItem from="1553675503636" duration="1206000" />
+      <workItem from="1553758462564" duration="6490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14088000" />
+    <option name="totallyTimeSpent" value="20578000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -262,9 +309,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="25" width="1313" height="743" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18863457" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19179164" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -280,7 +326,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.13843648" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="8" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21335505" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.21335505" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32899022" />
@@ -360,8 +406,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/ProcesamientoLineas.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
+        <state relative-caret-position="401">
           <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/ConceptosBasicos.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/cadenas.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/tipos.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/expresionesSentencias.sc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
         </state>
       </provider>
     </entry>

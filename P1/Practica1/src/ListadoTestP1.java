@@ -55,6 +55,6 @@ public class ListadoTestP1 {
    @Test
    public void testComprobarContadoresDnisRepetidosArchivo() {
 
-      //assertTrue (listado.contarEmpleadosDnisRepetidos() == 4);
+      assertTrue (listado.contarEmpleadosDnisRepetidos() == 4);
    }
 }
