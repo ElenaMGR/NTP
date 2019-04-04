@@ -27,4 +27,15 @@ object Factorial extends App{
 
   val factorial30 = factorialTRSimple(30)
   println(factorial30)
+
+  @annotation.tailrec
+  def factorialTRVD (x: BigInt, acum:BigInt = 1): BigInt ={
+    if (x==0 || x == 1) acum
+    else factorialTRVD(x-1,x*acum)
+  }
+
+  val factorial15 = factorialTRVD(15)
+  println(factorial15)
+
+  val factorialt30=factorialTRVD(acum=1,x=30)
 }
