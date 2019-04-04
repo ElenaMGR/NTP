@@ -78,6 +78,11 @@ public class Empleado {
         nombre=infos.get(1);
         apellidos=infos.get(2);
         correo=infos.get(3);
+
+        // Por defecto no sde asigna ni sector ni ruta (representado
+        // con el valor NA en cada enumerado)
+        sector = Sector.NOSECTOR;
+        ruta = Ruta.NORUTA;
     }
 
    /**

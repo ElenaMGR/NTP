@@ -26,21 +26,16 @@ public class ListadoTestP2 {
     */
    @BeforeClass
    public static void inicializacion() {
-      /*System.out.println("Metodo inicializacion conjunto pruebas");
+      System.out.println("Metodo inicializacion conjunto pruebas");
       // Se genera el listado de empleados
-      try {
-         listado = new ListadoEmpleados("./data/datos.txt");
-      } catch (IOException e) {
-         System.out.println("Error en lectura de archivo de datos");
-      }*/
+      listado = new ListadoEmpleados("./data/datos.txt");
 
-      // Se reparan los problemas y se pasan los datos al datos miembro
-      // listado
-      /*Map<String, List<Empleado>> dnisRepetidos=listado.obtenerDnisRepetidosArchivo();
+      // Se reparan los problemas y se pasan los datos al datos miembro listado
+      Map<String, List<Empleado>> dnisRepetidos=listado.obtenerDnisRepetidosArchivo();
       listado.repararDnisRepetidos(dnisRepetidos);
-      Map<String, List<Empleado>> correosRepetidos = listado.obtenerCorreosRepetidosArchivo();
-      listado.repararCorreosRepetidos(correosRepetidos);
-      listado.validarListaArchivo();*/
+      //Map<String, List<Empleado>> correosRepetidos = listado.obtenerCorreosRepetidosArchivo();
+      //listado.repararCorreosRepetidos(correosRepetidos);
+      //listado.validarListaArchivo();
 
       // Se leen ahora los archivos de asignaciones de sectores y departamentos
       /*try{
@@ -63,19 +58,19 @@ public class ListadoTestP2 {
     *
     * @throws Exception
     */
-   /*@Test
+   @Test
    public void testBusquedaEmpleadosSinRuta() throws Exception {
       // Se obtienen los empleados no asignados a cada asignatura
       // y se comprueba su valor
-      int res1, res2, res3;
+      /*int res1, res2, res3;
       res1=listado.buscarEmpleadosSinRuta(Sector.NOSECTOR).size();
       res2=listado.buscarEmpleadosSinRuta(Sector.SECTOR1).size();
       res3=listado.buscarEmpleadosSinRuta(Sector.SECTOR2).size();
       System.out.println("res1: "+res1+" res2: "+res2+ " res3: "+res3);
       assert (res1 == 418);
       assert (res2 == 432);
-      assert (res3 == 399);
-   }*/
+      assert (res3 == 399);*/
+   }
 
    /**
     * Prueba para el procedimiento de conteo de grupos para cada una

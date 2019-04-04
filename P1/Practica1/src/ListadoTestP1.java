@@ -48,6 +48,14 @@ public class ListadoTestP1 {
       assertTrue (listado.hayDnisRepetidosArchivo() == true);
    }
 
+    /**
+     * Test para comprobar la deteccion de correos repetidos
+     */
+    @Test
+    public void testComprobarHayCorreosRepetidos() {
+        assertTrue (listado.hayCorreosRepetidosArchivo() == true);
+    }
+
    /**
     * Test para comprobar el numero de empleados con correos
     * repetidos
