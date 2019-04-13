@@ -189,9 +189,9 @@ public class ListadoTestP2 {
 
       System.out.println("res1: "+cont.get(0)+ " res2: "+cont.get(1)+" res3: "+cont.get(2));
       // Se comprueban los resultado del metodo con los de referencia
-      assertTrue (cont.get(1) == 1673L);
-      assertTrue (cont.get(2) == 1641L);
-      assertTrue (cont.get(0) == 1686L);
+      assertTrue (cont.get(2) == 1673L);
+      assertTrue (cont.get(0) == 1641L);
+      assertTrue (cont.get(1) == 1686L);
 
    }
 }
