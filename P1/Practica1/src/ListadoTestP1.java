@@ -57,7 +57,7 @@ public class ListadoTestP1 {
     }
 
    /**
-    * Test para comprobar el numero de empleados con correos
+    * Test para comprobar el numero de empleados con dni
     * repetidos
     */
    @Test
@@ -65,4 +65,14 @@ public class ListadoTestP1 {
 
       assertTrue (listado.contarEmpleadosDnisRepetidos() == 4);
    }
+
+    /**
+     * Test para comprobar el numero de empleados con correo
+     * repetidos
+     */
+    @Test
+    public void testComprobarContadoresCorreosRepetidosArchivo() {
+
+        assertTrue (listado.contarEmpleadosCorreosRepetidos() == 315);
+    }
 }

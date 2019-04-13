@@ -4,7 +4,7 @@
 		module="pruebascala$sources"
 		revision="0.1"
 		status="integration"
-		publication="20190411101404"
+		publication="20190413111701"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
