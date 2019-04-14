@@ -1,9 +1,7 @@
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Map;
 
 /**
  * Práctica 1 NTP 8 Reinas
@@ -26,9 +24,9 @@ public class ReinasTest {
      */
     @Test
     public void testToStringConReinas() {
-        tablero.ponerReina(3,3);
-        tablero.ponerReina(6,6);
-        String resultado = tablero.toString();
+        Tablero t = tablero.ponerReina(3,3);
+        t = t.ponerReina(6,6);
+        String resultado = t.toString();
         System.out.println(resultado);
         assertTrue(resultado.contains("R"));
     }
