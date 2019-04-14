@@ -68,7 +68,7 @@ public class ListadoTestP2 {
       res2=listado.buscarEmpleadosSinRuta(Sector.SECTOR1).size();
       res3=listado.buscarEmpleadosSinRuta(Sector.SECTOR2).size();
       System.out.println("res1: "+res1+" res2: "+res2+ " res3: "+res3);
-      assertTrue (res1 == 416);
+      assertTrue (res1 == 418);
       assertTrue (res2 == 432);
       assertTrue (res3 == 399);
    }
@@ -108,9 +108,9 @@ public class ListadoTestP2 {
       res4=listado.buscarEmpleadosSinSector(Ruta.NORUTA).size();
       System.out.println("res1: "+res1+" res2: "+res2+ " res3: "+res3+ " res4: "+res4);
       assertTrue (res1 == 446);
-      assertTrue (res2 == 415);
+      assertTrue (res2 == 414);
       assertTrue (res3 == 409);
-      assertTrue (res4 == 416);
+      assertTrue (res4 == 418);
    }
 
    /**
@@ -127,7 +127,7 @@ public class ListadoTestP2 {
       int res1;
       res1=listado.buscarEmpleadosSinSectorConRuta().size();
       System.out.println("res1: "+res1);
-      assertTrue (res1 == 1270);
+      assertTrue (res1 == 1269);
    }
 
 
@@ -162,8 +162,8 @@ public class ListadoTestP2 {
 
       // Se comprueban los valores obtenenidos con los valores por referencia
       Long contadoresReferenciaSector1[] = {401L, 437L, 403L, 432L};
-      Long contadoresReferenciaSector2[] = {428L, 425L, 389L, 399L};
-      Long contadoresReferenciaNoSector[] = {446L, 415L, 409L, 416L};
+      Long contadoresReferenciaSector2[] = {428L, 425L, 388L, 399L};
+      Long contadoresReferenciaNoSector[] = {446L, 414L, 409L, 418L};
 
       // Se comprueban los resultado del metodo con los de referencia
       Long contadoresCalculados[] = new Long[4];
@@ -189,9 +189,12 @@ public class ListadoTestP2 {
 
       System.out.println("res1: "+cont.get(0)+ " res2: "+cont.get(1)+" res3: "+cont.get(2));
       // Se comprueban los resultado del metodo con los de referencia
+      //sector 2
+      assertTrue (cont.get(0) == 1640L);
+      // sin sector
+      assertTrue (cont.get(1) == 1687L);
+      //sector 1
       assertTrue (cont.get(2) == 1673L);
-      assertTrue (cont.get(0) == 1641L);
-      assertTrue (cont.get(1) == 1686L);
 
    }
 }

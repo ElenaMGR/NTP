@@ -6,7 +6,6 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
@@ -189,27 +188,29 @@ public class ListadoEmpleados {
     }
 
     /**
-     * Este métdodo se encarga de arreglar los dnis repetidos
+     * Este métdodo se encarga de arreglar los dnis repetidos, se mantiene uno de ellos
      * @param listaRepeticion lista de empleados con dnis repetidos
      */
     public void repararDnisRepetidos(Map<String, List<Empleado>> listaRepeticion){
-
-
+        // Recorremos la lista de repetición
         listaRepeticion.forEach(
                 (dni, asignados) ->{
-                    listadoArchivo.forEach( campo -> {
-                        if (campo.obtenerDni()==dni){
-                            campo.asignarDniAleatorio();
-                        }
+                    // Recorremos los empleados con dni repetido
+                    asignados.forEach( campo -> {
+                        // Buscamos en listadoArchivo el empleado con dicho dni y se repara
+                        listadoArchivo.stream().filter(empleado ->
+                                empleado.obtenerDni() == campo.obtenerDni())
+                                .findFirst().get().asignarDniAleatorio();
                     });
                 }
         );
 
+        // Compruebo que no queden dnis repetidos
         if (hayDnisRepetidosArchivo()){
             repararDnisRepetidos(obtenerDnisRepetidosArchivo());
         }
-
     }
+
 
     /**
      *
