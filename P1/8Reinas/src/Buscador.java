@@ -3,21 +3,44 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * Clase Buscador
+ */
 public class Buscador {
+    /**
+     * Dimension de los tableros
+     */
     private int dimension;
 
+    /**
+     *
+     * @return devuelve la dimensión de los tableros
+     */
     public int getDimension() {
         return dimension;
     }
 
+    /**
+     * Asigna una dimension a los tableros
+     * @param dimension
+     */
     public void setDimension(int dimension) {
         this.dimension = dimension;
     }
 
+    /**
+     * Constructor de la clase Buscador
+     * @param dimension
+     */
     public Buscador(int dimension) {
         this.dimension = dimension;
     }
 
+    /**
+     * Método recursivo que va ubicando reinas en una posición si se puede
+     * @param fila
+     * @return devuelve una lista de tableros con soluciones
+     */
     public ArrayList<Tablero> ubicarReina(int fila){
         ArrayList<Tablero> tableros = new ArrayList<Tablero>();
         // caso base: si la fila es -1, entonces crear un tablero vacio y
@@ -43,7 +66,9 @@ public class Buscador {
                     IntStream.range(0,dimension).boxed().map(columna ->{
                         Celda celdaNueva = new Celda(fila,columna);
                         Tablero t = null;
+                        //System.out.println("Fila: "+ fila+" - Columna: "+columna);
                         if(tablero.posicionSegura(celdaNueva)){
+                            //System.out.println("Entra");
                             return tablero.ponerReina(celdaNueva.getFila(),celdaNueva.getColumna());
                         }
                         return t;
@@ -55,28 +80,12 @@ public class Buscador {
     }
 
 
-
+    /**
+     * Método que resuelve el problema de las 8 Reinas
+     * @return devuelve una lista de tableros solución
+     */
     public ArrayList<Tablero> resolver(){
         return ubicarReina(dimension -1);
     }
 
-    public static void main(String args[]) {
-        Buscador buscador = new Buscador(6);
-
-        ArrayList<Tablero> solucion = buscador.resolver();
-        System.out.println(solucion.size());
-        if(solucion.size() > 0){
-            System.out.println("Soluciones encontradas: \n");
-            solucion.stream().forEach(tablero -> {
-                System.out.println(tablero.toString());
-                System.out.println("------------------------------------------------------------");
-                System.out.println("------------------------------------------------------------" + "\n");
-
-            });
-        }
-        else{
-            System.out.println("Ninguna solución encontrada");
-        }
-
-    }
 }
