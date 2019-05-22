@@ -10,6 +10,7 @@ object SeriesRecurrente {
     go(x,p,a)
   }
 
+
   def Fibonacci (x : Long) : Long = {
     @annotation.tailrec
     def go (x : Long, previo : Long, actual : Long) : Long = {
@@ -71,6 +72,18 @@ object SeriesRecurrente {
     println("................... Series definidas de forma recurrente ...................")
     println(Fibonacci(20))
     println(SeriesGenerica(20,0,1,1,1))
+
+    println(Lucas(20))
+    println(SeriesGenerica(20,2,1,1,1))
+
+    println(Pell(20))
+    println(SeriesGenerica(20,2,6,2,1))
+
+    println(PellLucas(20))
+    println(SeriesGenerica(20,2,2,2,1))
+
+    println(Jacobsthal(20))
+    println(SeriesGenerica(20,0,1,1,2))
 
   }
 

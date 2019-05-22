@@ -1,40 +1,26 @@
-import org.scalacheck.{Gen, Properties}
-import org.scalacheck.Prop.forAll
+import org.scalatest.FunSuite
 
-object SeriesRecurrentesCheck extends Properties("Series"){
-  private val MAXIMO=30
+class SeriesTest extends FunSuite {
 
-  // generador
-  val coordenadasExtremos = for{
-    fila <- Gen.choose(0, MAXIMO)
-    columna <- Gen.oneOf(0, fila)
-  } yield (fila, columna)
+  test("Comprobar función") {
+    assert(SeriesRecurrente.SeriesGenerica(16,0,1,1,1) == SeriesRecurrente.Fibonacci(16) &&
+      SeriesRecurrente.SeriesGenerica(16,0,1,1,1) == 987)
+    println("Fibonacci(16) = " +987)
 
-  // propiedad
-  property("Elementos en lados del triangulo valen 1") = {
-    forAll(coordenadasExtremos) { (i) => {
-      val resultado = TrianguloPascal.calcularValorTrianguloPascal(i._1, i._2)
-      println("Fila = "+i._1 + " Columna: "+i._2 + " Resultado: "+resultado)
-      resultado == 1
-    }
-    }
-  }
+    assert(SeriesRecurrente.SeriesGenerica(24,2,1,1,1) == SeriesRecurrente.Lucas(24) &&
+      SeriesRecurrente.SeriesGenerica(24,2,1,1,1) == 103682)
+    println("Lucas(24) = " +103682)
 
-  // generador coordenadas internas
-  val coordenadasInteriores = for {
-    fila <- Gen.choose(2, MAXIMO)
-    columna <- Gen.choose(1, fila-1)
-  } yield(fila, columna)
+    assert(SeriesRecurrente.SeriesGenerica(13,2,6,2,1) == SeriesRecurrente.Pell(13) &&
+      SeriesRecurrente.SeriesGenerica(13,2,6,2,1) == 228486)
+    println("Pell(13) = " +228486)
 
-  property("Elementos interiores del triangulo: ") = {
-    forAll(coordenadasInteriores) { (i) => {
-      val resultado=TrianguloPascal.calcularValorTrianguloPascal(i._1, i._2)
-      val supIzquierda=TrianguloPascal.calcularValorTrianguloPascal(i._1-1, i._2-1)
-      val supDerecha=TrianguloPascal.calcularValorTrianguloPascal(i._1-1, i._2)
-      println("Fila = "+i._1 + " Columna: "+i._2 + " Numero: "+resultado)
+    assert(SeriesRecurrente.SeriesGenerica(20,2,2,2,1) == SeriesRecurrente.PellLucas(20) &&
+      SeriesRecurrente.SeriesGenerica(20,2,2,2,1) == 45239074)
+    println("PellLucas(20) = " +45239074)
 
-      resultado == (supDerecha + supIzquierda)
-    }
-    }
+    assert(SeriesRecurrente.SeriesGenerica(10,0,1,1,2) == SeriesRecurrente.Jacobsthal(10) &&
+      SeriesRecurrente.SeriesGenerica(10,0,1,1,2) == 341)
+    println("Jacobsthal(10) = " +341)
   }
 }
