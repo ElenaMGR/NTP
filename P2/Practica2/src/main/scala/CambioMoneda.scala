@@ -1,9 +1,15 @@
 object CambioMoneda {
   def listarCambiosPosibles(cantidad: Int, monedas: List[Int]): List[List[Int]] = {
-    if (cantidad == 0 || monedas.isEmpty) List(List(0))
-    else {
-      var monedasOrdenadas = monedas.sorted
-      List(List(0,1,2))
+    devolverMonedas(cantidad,monedas.sorted, List[List[Int]](), List[Int]())
+  }
+
+
+  def devolverMonedas(cantidad: Int, monedas: List[Int],soluciones:List[List[Int]],monedaActual:List[Int]): List[List[Int]] = {
+    if(monedas.isEmpty || cantidad<0) soluciones
+    else if(cantidad == 0) monedaActual::soluciones
+    else{
+      devolverMonedas(cantidad-monedas.head,monedas,soluciones,monedas.head::monedaActual) :::
+        devolverMonedas(cantidad,monedas.tail,soluciones,monedaActual)
     }
   }
 
